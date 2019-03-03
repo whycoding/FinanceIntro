@@ -1,0 +1,41 @@
+{
+    "title": "GitHandOut",
+    "description": "Git description",
+    "author": "Haoyuan Wei",
+    "language": "zh-hans",
+    "root": ".",
+   
+    "links": {
+        "sidebar": {
+            "Home": "http://sce.carleton.ca/~haoyuanwei"
+        }
+    },
+	
+    "plugins": [
+		"-sharing",
+		"katex-plus",
+		"anchor-navigation-ex", 
+		"edit-link"
+    ],
+
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": true
+        },
+		
+        "edit-link": {
+            "base": "https://github.com/whycoding/git_intro_practice/edit/master",
+            "label": "Edit This Page"
+        },
+		
+        "anchor-navigation-ex": {
+			"showLevel": true,
+			"associatedWithSummary": true,
+            "tocLevel1Icon": "fa fa-hand-o-right",
+            "tocLevel2Icon": "fa fa-hand-o-right",
+            "tocLevel3Icon": "fa fa-hand-o-right"
+        }
+		
+    }
+	
+}
