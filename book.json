@@ -1,6 +1,6 @@
 {
-    "title": "GitHandOut",
-    "description": "Git description",
+    "title": "Finance Introduction",
+    "description": "Finance Introduction",
     "author": "Haoyuan Wei",
     "language": "zh-hans",
     "root": ".",
@@ -29,7 +29,7 @@
         },
 		
         "anchor-navigation-ex": {
-			"showLevel": true,
+			"showLevel": false,
 			"associatedWithSummary": true,
             "tocLevel1Icon": "fa fa-hand-o-right",
             "tocLevel2Icon": "fa fa-hand-o-right",
