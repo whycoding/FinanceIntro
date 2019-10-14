@@ -1,0 +1,6 @@
+[book]
+authors = ["Haoyuan Wei"]
+language = "zh-hans"
+multilingual = false
+src = "src"
+title = "Finance Introduction"
