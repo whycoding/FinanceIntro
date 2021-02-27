@@ -3,8 +3,14 @@
 
 * [金融简介](金融/README.md)
     * [金融学](金融/金融学.md)
+    * [货币](金融/货币.md)
     * [财富管理](金融/财富管理.md)
     * [Others](金融/Others.md)
+
+* [货币](货币/README.md)
+    * [通货膨胀](货币/README.md)
+    * [金本位](货币/README.md)
+    * [石油货币](货币/README.md)
 
 * [股票](股票/README.md)
     * [股价变化](股票/股价变化.md)
@@ -15,12 +21,6 @@
     * [MACD](股票/MACD.md)
     * [RPS](股票/RPS.md)
     * [基金](股票/基金.md)
-
-
-* [货币](货币/README.md)
-    * [通货膨胀](货币/README.md)
-    * [金本位](货币/README.md)
-    * [石油货币](货币/README.md)
 
 
 * [外汇](外汇/README.md)
