@@ -4,3 +4,7 @@ language = "zh-hans"
 multilingual = false
 src = "src"
 title = "Finance Introduction"
+
+[output.html]
+mathjax-support = true
+
