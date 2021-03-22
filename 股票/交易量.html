@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html lang="zh-hans" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>交易量 - Finance Introduction</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">前言</a></li><li class="chapter-item expanded "><a href="../金融/index.html"><strong aria-hidden="true">1.</strong> 金融简介</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../金融/金融学.html"><strong aria-hidden="true">1.1.</strong> 金融学</a></li><li class="chapter-item expanded "><a href="../金融/货币.html"><strong aria-hidden="true">1.2.</strong> 货币</a></li><li class="chapter-item expanded "><a href="../金融/利率.html"><strong aria-hidden="true">1.3.</strong> 利率</a></li><li class="chapter-item expanded "><a href="../金融/财富管理.html"><strong aria-hidden="true">1.4.</strong> 财富管理</a></li><li class="chapter-item expanded "><a href="../金融/Others.html"><strong aria-hidden="true">1.5.</strong> Others</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> 利率</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../利率/利率行为1.html"><strong aria-hidden="true">2.1.</strong> 供需曲线</a></li></ol></li><li class="chapter-item expanded "><a href="../货币/index.html"><strong aria-hidden="true">3.</strong> 货币</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../货币/index.html"><strong aria-hidden="true">3.1.</strong> 通货膨胀</a></li><li class="chapter-item expanded "><a href="../货币/index.html"><strong aria-hidden="true">3.2.</strong> 金本位</a></li><li class="chapter-item expanded "><a href="../货币/index.html"><strong aria-hidden="true">3.3.</strong> 石油货币</a></li></ol></li><li class="chapter-item expanded "><a href="../股票/index.html"><strong aria-hidden="true">4.</strong> 股票</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../股票/股价变化.html"><strong aria-hidden="true">4.1.</strong> 股价变化</a></li><li class="chapter-item expanded "><a href="../股票/基本术语.html"><strong aria-hidden="true">4.2.</strong> 基本术语</a></li><li class="chapter-item expanded "><a href="../股票/基本技术指标.html"><strong aria-hidden="true">4.3.</strong> 基本技术指标</a></li><li class="chapter-item expanded "><a href="../股票/交易量.html" class="active"><strong aria-hidden="true">4.4.</strong> 交易量</a></li><li class="chapter-item expanded "><a href="../股票/筹码分布.html"><strong aria-hidden="true">4.5.</strong> 筹码分布</a></li><li class="chapter-item expanded "><a href="../股票/MACD.html"><strong aria-hidden="true">4.6.</strong> MACD</a></li><li class="chapter-item expanded "><a href="../股票/RPS.html"><strong aria-hidden="true">4.7.</strong> RPS</a></li><li class="chapter-item expanded "><a href="../股票/基金.html"><strong aria-hidden="true">4.8.</strong> 基金</a></li></ol></li><li class="chapter-item expanded "><a href="../外汇/index.html"><strong aria-hidden="true">5.</strong> 外汇</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../外汇/index.html"><strong aria-hidden="true">5.1.</strong> TBC</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Finance Introduction</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="交易量"><a class="header" href="#交易量">交易量</a></h1>
+<p>交易量是股票交易的重要指标，在之前股价变化的章节我们介绍了，股票的分时图可能会被庄家利用，使得新手错误地判断涨跌信号，本章我们一起学习一下如何通过交易量解读真实的涨跌信号。</p>
+<p>看成交量要结合价格所处的位置，高位和低位的意义是不同的；</p>
+<h2 id="上涨放量是真涨"><a class="header" href="#上涨放量是真涨">上涨放量是真涨</a></h2>
+<p>放量，成交量放大。成交量的放大源于多空双方意见的分歧，有人看多，也有人看空。看多者买入，看空者卖出，这样就会有成交。多空双方分歧增大，那成交量就会放大。</p>
+<p>上涨放量——是指成交量大幅增加的同时，股价也同步上涨的一种现象。也称之为量增价涨。上涨放量一般发生在趋势转折的拐点处。多空双方搏杀激烈程度的体现。</p>
+<p>放量上涨形成原因：</p>
+<p>放量上涨一般是股价长期处于低位状态，也就是说，有很大部分筹码都在高位套牢了，那些持有资金准备买入的投资者仅占小部分，之所以能出现大的成交量唯一解释就是残存主力的对倒，他们为了吸引更多资金进场跟进，就算这时候基本面有利好出现，大的成交量也有可能会使主力所释放的，因为利好消息出台，并不会使上方大量套牢盘割肉放血。</p>
+<p>所以，底部放量上涨一般都是主力所为，说明庄家开始向上炒作，开始大幅拉升，短期内股价会有较大涨幅。</p>
+<p>上涨过程中，总会不断遇到上一波走势中还没有平掉的亏损盘。他们大多都等着解套呢。大多数时候，他们很分散，每一个价位上的亏损多头都较少，只需要少量的成交量就可以全部吃掉他们的卖单，即使有少量残余也力量太小不足为虑。所以，这里不会出现很大的成交量。但是，如果这些亏损盘十分集中，就构成了重要的压力位。待解套的亏损盘很多，这是引发较大成交量的基础，但是不一定会放量。如果价格的上涨不是由主力推动，多头的力量由于分散而变得薄弱，很难真正突破这些重要的压力位。不知道大部分假突破是不是这样来的。时间持续很短，很多亏损盘都还没平掉，所以不一定放量。如果走势是由主力推动，主力一定会尽可能多的吃掉这些亏损盘，否则不利后市拉升。这自然触发了大成交量。这就是为什么说突破一定要放量，否则极有可能是假突破，因为不放量前面的亏损盘都还在呢。</p>
+<h2 id="下跌放量是真跌"><a class="header" href="#下跌放量是真跌">下跌放量是真跌</a></h2>
+<p>下跌放量就是暴跌，是一个危险信号。说明下跌动能强，一般是有重大利空消息出现之后会出现放量下跌，这是不太理智的抛售行为。</p>
+<p>下跌伴随着成交量放大，持有的人着急卖股了结获利，接盘的人被前期涨幅吸引来接盘，但是由于卖货的人比买货的人更加主动出手，导致阴线出来，甚至放量大阴线出来。所以，放量下跌尤其是K线高位的放量下跌，可以认为日内必定不是短线低位，肯定会有更低价格。可知，下跌放量是短线出局波段时机。</p>
+<h2 id="上涨缩量是诱多"><a class="header" href="#上涨缩量是诱多">上涨缩量是诱多</a></h2>
+<p>与放量上涨刚好相反，股票价格上涨，但是成交量却越来越小。该形态出现在上涨中途和下跌中途。</p>
+<p>（1）上涨中途</p>
+<p>当股价从低位开始上涨并且出现缩量上涨时，就说明主力已经完成建仓，开始进入拉抬股价，并且所有均线呈现上升状态。这时可以及时参与。</p>
+<p>（2）下跌中途</p>
+<p>股价开始由高位下跌后会在下跌一段时间后出现缩量上涨。这是由于股价跌幅过大，主力没在高位完全卖出。这时候主力使用较少的资金就能将股价再次拉起，制造出上涨假象，借此诱骗散户购买股票，以达到出货目的。这时候散户就要回避参与了，并且及时卖出手中的股票。缩量上涨后股票又会继续下跌。</p>
+<p>缩量上涨，投资者看好后市，只有人买，没人卖，所以急剧缩量。中低位的缩量上涨应该坚决跟进，坐等获利。而高位缩量上涨就意味着滞涨，这是就要逐步减仓。</p>
+<p>上涨过程中，总会不断遇到上一波走势中还没有平掉的亏损盘。他们大多都等着解套呢。大多数时候，他们很分散，每一个价位上的亏损多头都较少，只需要少量的成交量就可以全部吃掉他们的卖单，即使有少量残余也力量太小不足为虑。所以，这里不会出现很大的成交量。但是，如果这些亏损盘十分集中，就构成了重要的压力位。待解套的亏损盘很多，这是引发较大成交量的基础，但是不一定会放量。如果价格的上涨不是由主力推动，多头的力量由于分散而变得薄弱，很难真正突破这些重要的压力位。不知道大部分假突破是不是这样来的。时间持续很短，很多亏损盘都还没平掉，所以不一定放量。如果走势是由主力推动，主力一定会尽可能多的吃掉这些亏损盘，否则不利后市拉升。这自然触发了大成交量。这就是为什么说突破一定要放量，否则极有可能是假突破，因为不放量前面的亏损盘都还在呢。</p>
+<h2 id="下跌缩量是洗盘"><a class="header" href="#下跌缩量是洗盘">下跌缩量是洗盘</a></h2>
+<p>缩量下跌，最常见的就是上涨过程中的调整，缩量调整到均线是很好的买点。</p>
+<p>对于个股来说，出现缩量下跌，说明庄家为了吸货，打压股价，但是股票成交量不大，说明散户吸收，那么庄家将会拉升股票，以便吸货；市场进入熊市，阴跌不止，离场观望，切勿抄底。</p>
+<p>出现缩量下跌一般情况下会止跌，然后进入盘整状态。股价在下跌过程中不放量是正常现象，没有接盘因此抛不出去，也没有人愿意割肉。实盘过程中经常出现无量阴跌天天跌的现象，只有在出现恐慌性抛盘之后，再次放量才会有所企稳。</p>
+<p>参考：</p>
+<p>http://www.sohu.com/a/141820926_481627</p>
+<p>https://www.zhihu.com/question/34829371/answer/60001766</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../股票/基本技术指标.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../股票/筹码分布.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../股票/基本技术指标.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../股票/筹码分布.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

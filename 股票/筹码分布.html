@@ -1,0 +1,315 @@
+<!DOCTYPE HTML>
+<html lang="zh-hans" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>筹码分布 - Finance Introduction</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">前言</a></li><li class="chapter-item expanded "><a href="../金融/index.html"><strong aria-hidden="true">1.</strong> 金融简介</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../金融/金融学.html"><strong aria-hidden="true">1.1.</strong> 金融学</a></li><li class="chapter-item expanded "><a href="../金融/货币.html"><strong aria-hidden="true">1.2.</strong> 货币</a></li><li class="chapter-item expanded "><a href="../金融/利率.html"><strong aria-hidden="true">1.3.</strong> 利率</a></li><li class="chapter-item expanded "><a href="../金融/财富管理.html"><strong aria-hidden="true">1.4.</strong> 财富管理</a></li><li class="chapter-item expanded "><a href="../金融/Others.html"><strong aria-hidden="true">1.5.</strong> Others</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> 利率</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../利率/利率行为1.html"><strong aria-hidden="true">2.1.</strong> 供需曲线</a></li></ol></li><li class="chapter-item expanded "><a href="../货币/index.html"><strong aria-hidden="true">3.</strong> 货币</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../货币/index.html"><strong aria-hidden="true">3.1.</strong> 通货膨胀</a></li><li class="chapter-item expanded "><a href="../货币/index.html"><strong aria-hidden="true">3.2.</strong> 金本位</a></li><li class="chapter-item expanded "><a href="../货币/index.html"><strong aria-hidden="true">3.3.</strong> 石油货币</a></li></ol></li><li class="chapter-item expanded "><a href="../股票/index.html"><strong aria-hidden="true">4.</strong> 股票</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../股票/股价变化.html"><strong aria-hidden="true">4.1.</strong> 股价变化</a></li><li class="chapter-item expanded "><a href="../股票/基本术语.html"><strong aria-hidden="true">4.2.</strong> 基本术语</a></li><li class="chapter-item expanded "><a href="../股票/基本技术指标.html"><strong aria-hidden="true">4.3.</strong> 基本技术指标</a></li><li class="chapter-item expanded "><a href="../股票/交易量.html"><strong aria-hidden="true">4.4.</strong> 交易量</a></li><li class="chapter-item expanded "><a href="../股票/筹码分布.html" class="active"><strong aria-hidden="true">4.5.</strong> 筹码分布</a></li><li class="chapter-item expanded "><a href="../股票/MACD.html"><strong aria-hidden="true">4.6.</strong> MACD</a></li><li class="chapter-item expanded "><a href="../股票/RPS.html"><strong aria-hidden="true">4.7.</strong> RPS</a></li><li class="chapter-item expanded "><a href="../股票/基金.html"><strong aria-hidden="true">4.8.</strong> 基金</a></li></ol></li><li class="chapter-item expanded "><a href="../外汇/index.html"><strong aria-hidden="true">5.</strong> 外汇</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../外汇/index.html"><strong aria-hidden="true">5.1.</strong> TBC</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Finance Introduction</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="筹码分布"><a class="header" href="#筹码分布">筹码分布</a></h1>
+<p>“筹码分布”的市场含义：它反映的是在不同价位上股票的数量。</p>
+<p>1.能有效地判断股票的行情性质和行情趋势；</p>
+<p>2.能有效地判断成交密集区的筹码分布和变化；</p>
+<p>3.能有效地识别庄家建仓和派发的全过程；</p>
+<p>4.能有效地判断行情发展中重要的支撑位和阻力位。</p>
+<h2 id="筹码转换过程"><a class="header" href="#筹码转换过程">筹码转换过程</a></h2>
+<p>首先我们需要了解换手率的概念。每次交易成功，即发生了一次换手。比如说,1000万的盘子,前天均价为10元,成交量为200万,也就是20%换手率；昨天以均价11元又成交300万,也就是30%换手率；那前天的200万成交量怎么样了呢？成本分析假定,前天的200万在昨天也以11元被30%换手了,那么,前天以10元成交的成交量还剩了200(1-30%)=140万；若今天以均价12元又成交了400万,同理可算,现在的筹码分布是：10元筹码为200(1-30%)(1-40%)=84万,11元的筹码为300(1-40%)=180万,12元的筹码是400万。</p>
+<p>股价的涨跌变化从表面上看仿佛只是股价的变化,但是其内在的本质却是市场中持股者手中筹码的转换变化。一轮行情的上涨与下跌均是由市场中个股筹码在不同价位进行不断转换造成的。要对市场中个股涨跌变化的本质进入深入了解就必须要对筹码转换的过程进行综合分析。</p>
+<p>所谓“筹码的转换过程”指的就是市场中持仓筹码由一个价位向另一个价位转换搬运的过程,筹码转换不仅仅描述的是筹码在价格上的变化过程而且筹码数量的转换。在市场中能够造成个股筹码不断转换主要的力量是来自市场中个股背后主家的行为。市场主力的行为将直接影响到股票筹码在不同的价格区域内的转换过程。如果将筹码转换的过程简单的比喻为“筹码搬家”,那么市场主力就是“搬运工”,它们最本质的目的就是在筹码由低到高的搬运过程中赚取利润。</p>
+<h2 id="主力的筹码转换"><a class="header" href="#主力的筹码转换">主力的筹码转换</a></h2>
+<p>主力完成一轮行情的炒作由以下四个阶段构成：吸筹阶段、洗盘阶段、拉升阶段、派发阶段。</p>
+<p>吸筹阶段：此时股票筹码的价格处于相对低位,主力的主要任务是在该区间进行大量的收集廉价筹码。市场主力在该区域所完成建仓量的多少将直接影响到其将来拉升股票高度能力的大小。收集的筹码越多,控盘度越高,市场中的筹码就越少,拉升时的抛压就越轻,最后实现的利润也就越大。反之,收集的筹码越少,控盘度越轻,市场中的筹码就越多,拉升时的抛压就越重,最后实现的利润也就越小。这也就造成了市场主力控盘度的大小与日后股票拉升时的累计涨幅成正比,这就造成了市场中跟庄的散户投资者为什么总是利用各种方法在挖掘具备“低位高控盘庄股”条件的个股。</p>
+<p>洗盘阶段：吸筹完毕后市场主力为了将盘面中的中线套牢或着短线跟风的浮动筹码给洗出来必须进行必要的洗盘阶段。洗盘的目的就是为了减少日后拉升过程中的获利抛压及自己显现拉升后的利润最大化。</p>
+<p>其实,主力在吸筹阶段及洗盘阶段的整个过程就属于一个筹码转换的过程,这个过程中主要是以市场主力买入,散户卖出为筹码转换的主要转移方向。当主力将这两个过程完成之后在市场条件成熟之后将发动拉升行情,此后筹码转移的方向将相反。</p>
+<p>通常主力在吸筹及洗盘阶段时股票的价格总是很疲软,使得投资者心态焦躁而抛出,而当主力进入拉升及派发阶段时股价往往呈现价增量涨以吸引市场投资者跟风派发的目的。</p>
+<p>拉升阶段：筹码不断滚动,但是只要是以前累积收集的低位筹码没有向高位移动,那就可以判断主力并没有出货！如果大家发现低位的筹码不断减少,而高位不断出现筹码的累积现象,那就是主力在偷偷排发出货了！</p>
+<p>派发阶段：低位筹码向高位移动！</p>
+<p>如何有效地测定现阶段持仓成本的分布状况,是进行成本分析的关键所在。这里我们特别讲解一种独特的指标：移动成本分布。该指标通过对股票成交换手的动态分析和研究,透视出股票成本转换的全过程,并形象地标明股票不同时间段不同价位持仓筹码的分布量和变化情况。确切地说它不能称之为指标,因为它没有指标那种确切性,没有指标的交叉、背离及数值信号,它却能以其独特的方式向人们展示股票的成本分布事实,然而这种事实的展示无疑对庄家构成了威胁,却能使投资者有效地研判股票的成本结构,并以此指导自已的实战操作。移动成本分布的移动特性在于,可以选择任意交易日作为测试成本分布的基准点,形象直观地透视出相对于这个测试基准点股票的筹码分布状况；此外,通过不断移动改变测试基准点,动态地透视出各价位持仓量的增减变化,从而全面地透视成本转换的全过程。移动成本分布的独特之处在于强大的透视性,它可以形象而直观地显示股票的成本结构,并将每一个阶段的持仓成本分布变化毫无保留地展示在我们的面前。</p>
+<h2 id="筹码分布图"><a class="header" href="#筹码分布图">筹码分布图</a></h2>
+<p>以当前收市价为分界点，白线表示在当前股价下处于亏损的筹码；黄线显示当前股价处于盈利状态的筹码；蓝色线表示市场所有持仓筹码的平均成本。</p>
+<p>获利比例指收盘价位以下的成本分布图占整个成本分布图的比例。</p>
+<p>某某元处获利盘代表鼠标箭头所指的位置获利盘的比例。</p>
+<p>平均成本指50%的成本分布位置的价格。</p>
+<p>什么是成本集中度呢，我们以90%的成本要布来介绍一下成本集中度。筹码分布图中去除了90%的筹码后余下的就是10%的筹码，我们把这10%的筹码分成两个5%一个5%是筹码分布图最上面的。另一个5%是筹码分布图最下面的。对于这两个5%筹码就有两上价位，一高一低。这两上价位的差值与这两个价位的和值的比值就是成本集中度。简单来说如果高价位是A低价位是B，那么成本集中度就是A—B/A+B。成本集中度是一个很重要的数值，这个数值理论上在0到100之间。集中度的数值越小表明股票筹码的成本越集中。</p>
+<h2 id="火焰山"><a class="header" href="#火焰山">火焰山</a></h2>
+<p>　　在整个移动成本分布图中,可以显现从股票上市以来的所有筹码的搬移过程,但是,在整个分布图中我们无法得知筹码与时间的关联,无法反映筹码的时间性,也就是无法知道在整个筹码分布中的筹码沉淀情况和筹码活跃情况。</p>
+<p>　　为了进一步反映筹码的时间性,就产生了新的移动成本分布——火焰山。在筹码的价格特性以外,引入了筹码的时间特性,以颜色的不同区别不同时间概念的筹码。</p>
+<p>　　如下图所示,显示了N日前的成本分布,显示的色彩是由大红色到金黄色,时间越短,颜色越红,时间越长,颜色越黄。需要特别指出的是,由于各个时间段的筹码叠加的原因,所以其色彩图也是叠加的。例如：金黄色的30日前成本区域叠加在了5日前的成本区域上，也就是说，5日前的成本真实的包含区域应当是红色和黄色两种颜色的外廓所包含的区域。我们可以从中得出筹码搬家的大概情况.</p>
+<p>远期移动成本分布图（也称火焰山移动成本分布）。</p>
+<p>N日前成本*%，表示N个交易日前购买这个股票的资金占总全部成本的比例。越近时间的N日前成本分布比例越高，表示近期买入这个股票的资金越少。</p>
+<p>比如，可以用不同颜色显示上市到30周期前的成本分布、上市到60周期前的成本分布、上市到100周期前的成本分布，要注意的是，30周期前的成本分布包含了60周期前的成本分布，因此除了它自身的颜色区域外，还包括60周期前的成本分布颜色区域；而60周期前的成本分布又包含了100周期前的成本分布，如此下去。 白色的表示直到5周期前的成本都没覆盖到的 也就是5周期内的成本范围。</p>
+<p>显示了N周期前的成本分布，显示的色彩是由大红色到金黄色，(N越小)时间越长，颜色越红，(N越大)时间越短，颜色越黄。需要特别指出的是，由于各个时间段的筹码叠加的原因，所以其色彩图也是叠加的。</p>
+<p>5日内成本是说最近5个交易日购买这个股票的资金占全部成本的比例。越近时间的筹码分布比例越高，表示近期买入这个股票的资金越多。</p>
+<p>比如，可以用不同颜色显示5周期内的成本分布、20周期内的成本分布、60周期内的成本分布，要注意的是，20周期内的成本分布包含了5周期内成本分布，60周期内成本分布又包含了20周期内的成本分布。 白色表示100周期前的成本。</p>
+<p>显示了N周期内的成本分布，显示的色彩是由浅蓝到深蓝，时间越短，蓝色越浅，时间越长，蓝色越深，也需要提醒的是，由于各个时间段的筹码叠加的原因，所以其色彩图也是叠加的。</p>
+<h2 id="技术总结"><a class="header" href="#技术总结">技术总结</a></h2>
+<ul>
+<li>单峰密集</li>
+</ul>
+<p>单峰密集是移动成本分布所形成的一个独立的密集峰形，它表明该股票的流通筹码在某一特定的价格区域充分集中。单峰密集对于行情的研判有三个方面的实战意义：</p>
+<pre><code>* 当庄家为买方股民为卖方时，所形成的单峰密集意味着上攻行情的爆发
+
+* 当庄家为卖方股民为买方时，所形成的单峰密集意味着下跌行情的开始
+
+* 当庄家和股民混合买卖时，这种单峰密集将持续到趋势明朗
+</code></pre>
+<p>正确地研判单峰密集的性质是判明行情性质的关键所在，也才会有正确的操作决策。</p>
+<p>根据股价所在的相对位置，单峰密集可分为低位单峰密集和高位单峰密集。</p>
+<p>形态特征：成本分布在某一价格区域高度密集，形成一个密集峰形。在这个密集峰的上下几乎没有筹码分布。</p>
+<p>形成机理：在单峰密集区域，流通筹码实现了充分换手；上方的筹码割肉，在单峰密集区域被承接；下方的筹码获利回吐，在单峰密集区域被消化。几乎所有的筹码在单峰密集区域实现了成交换手</p>
+<ul>
+<li>多峰密集</li>
+</ul>
+<p>形态特征：股票筹码分布在两个或两个以价位区域，分别形成了两个或两个以上密集峰形；上方的密集峰，称为上密集峰；下方的密集峰，称为下密集峰；中间的密集峰，称为中密集峰。</p>
+<p>形态种类：根据上下峰形成的时间次序不同，可分为下跌多峰和上涨多峰。</p>
+<p><strong>下跌多峰</strong></p>
+<p>下跌多峰是股票下跌过程中，由上密集峰下行，在下密集峰处获得支撑形成下密集峰，而上密集峰仍然存在</p>
+<p>形成次序：上密集峰、下密集峰。</p>
+<p>形成机理：上密集峰被击穿，股价下行在下密集峰处受到支撑，止跌企稳。上密集峰的部分筹码割肉至下密集峰，形成多峰密集。通常上密集峰称为套牢峰，下密集峰称为吸筹峰。多峰密集中最典型的是双峰密集。</p>
+<p>双峰密集是由上密集峰和下密集峰构成，对股价的运行有较强的支撑力和阻力。当股价运行至上密集峰处常常遇到解套压力，受阻回落；当股价运行至下密集峰处常被吸筹承接而反弹。为此，也可将上密集峰称为阻力峰，下密集峰称为支撑峰。</p>
+<p>峰谷：双峰之间称为峰谷。峰谷常常被填平，使双峰变成单峰。由于双峰的上峰为阻力位，下峰为支撑位，股价通常在双峰间上下震荡运行，最终将上下峰消耗掉，在原峰谷的位置形成单峰密集，这就意味着吸筹整理阶段告以段落。</p>
+<p>当股价处于下跌双峰状态时，一般不会立即发动上攻行情。因为如果股价迅速突破上峰，展开上攻行情，就会使市场获利分布不均匀，下峰获利较高，如果市场追涨意愿不高，庄家就会面临下峰的获利抛压和上峰的解套抛售的双压力，给庄家的拉升带来困难。</p>
+<p>必须指出，峰谷仅对下跌双峰具有意义；只有下跌双峰才会在峰谷处形成二峰合一的单峰密集。</p>
+<p><strong>上涨多峰</strong></p>
+<p>上涨多峰是股票上涨过程中，由下密集峰上行，在上密集峰处横盘震荡整理形成一个以上的上密集峰。</p>
+<p>形成次序：下密集峰、上密集峰。</p>
+<p>形成机理：股价突破下密集峰形成上行趋势，经过一段涨幅后作震荡整理。在此阶段由下峰处跟进的筹码在上峰处获利回吐，继续看涨的投资者在上峰处再次跟进，形成了上峰密集。上峰密集的筹码全部来自下峰，是下峰部分筹码移位上峰的结果。</p>
+<p>对上涨双峰的行情研判主要观察上下峰的变化对比。在上涨双峰中，下峰的意义非常的重大，它充分表明了庄家现阶段仓底筹码的存有量。如果上峰小于下峰行情将继续看涨，反之随着上峰的增大，下峰迅速减小，是下峰筹码被移至上峰的表现，此时庄家出货的可能性增大。</p>
+<p>下跌多峰密集通常最下方的峰为吸筹峰，也称支撑峰；相对于吸筹峰，每一个上峰都是阻力峰。筹码通常经震荡整理在最下峰处形成峰密集。上方的每一个峰将被逐渐消耗。下跌多峰中的上峰通常是庄家派发区域，其峰密集是庄家派发的结果，上峰筹码主要是套牢盘。</p>
+<p>上涨多峰通常出现在做庄周期跨度较大的股票中，该类股在长期上涨过程中作间息整理，形成多峰状态。它表明庄家仍没有完成持仓筹码的派发</p>
+<ul>
+<li>成本发散</li>
+</ul>
+<p>形态特征：成本分布呈现不均匀松散的分布状态。</p>
+<p>形态种类：根据趋势的方向不同可分为向上发散和向下发散。</p>
+<p>形成机理：在一轮行情的拉升或下跌过程中，由于股价的波动速度较快，使得持仓筹码在每一个价位迅速分布；对于单交易日而言，其筹码换手量增大，但整个价格波动区域呈现出筹码分散的状态。</p>
+<p>必须指出，成本发散是一个过渡状态，当新的峰密集形成后，成本发散将随着峰密集程度的增大而消失。成本密集是下一阶段行情的孕育过程，成本发散是行情的展开过程。成本分布的密集和发散将投资行为鲜明地分为两个阶段，成本密集时是决策阶段，成本分布发散是决策的实施阶段。一旦成本密集就意味着发生了大规模的成交换手。这种大规模的成交换手意味着行情的性质将发生改变。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../股票/交易量.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../股票/MACD.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../股票/交易量.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../股票/MACD.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

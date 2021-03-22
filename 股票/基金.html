@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<html lang="zh-hans" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>基金 - Finance Introduction</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">前言</a></li><li class="chapter-item expanded "><a href="../金融/index.html"><strong aria-hidden="true">1.</strong> 金融简介</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../金融/金融学.html"><strong aria-hidden="true">1.1.</strong> 金融学</a></li><li class="chapter-item expanded "><a href="../金融/货币.html"><strong aria-hidden="true">1.2.</strong> 货币</a></li><li class="chapter-item expanded "><a href="../金融/利率.html"><strong aria-hidden="true">1.3.</strong> 利率</a></li><li class="chapter-item expanded "><a href="../金融/财富管理.html"><strong aria-hidden="true">1.4.</strong> 财富管理</a></li><li class="chapter-item expanded "><a href="../金融/Others.html"><strong aria-hidden="true">1.5.</strong> Others</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> 利率</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../利率/利率行为1.html"><strong aria-hidden="true">2.1.</strong> 供需曲线</a></li></ol></li><li class="chapter-item expanded "><a href="../货币/index.html"><strong aria-hidden="true">3.</strong> 货币</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../货币/index.html"><strong aria-hidden="true">3.1.</strong> 通货膨胀</a></li><li class="chapter-item expanded "><a href="../货币/index.html"><strong aria-hidden="true">3.2.</strong> 金本位</a></li><li class="chapter-item expanded "><a href="../货币/index.html"><strong aria-hidden="true">3.3.</strong> 石油货币</a></li></ol></li><li class="chapter-item expanded "><a href="../股票/index.html"><strong aria-hidden="true">4.</strong> 股票</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../股票/股价变化.html"><strong aria-hidden="true">4.1.</strong> 股价变化</a></li><li class="chapter-item expanded "><a href="../股票/基本术语.html"><strong aria-hidden="true">4.2.</strong> 基本术语</a></li><li class="chapter-item expanded "><a href="../股票/基本技术指标.html"><strong aria-hidden="true">4.3.</strong> 基本技术指标</a></li><li class="chapter-item expanded "><a href="../股票/交易量.html"><strong aria-hidden="true">4.4.</strong> 交易量</a></li><li class="chapter-item expanded "><a href="../股票/筹码分布.html"><strong aria-hidden="true">4.5.</strong> 筹码分布</a></li><li class="chapter-item expanded "><a href="../股票/MACD.html"><strong aria-hidden="true">4.6.</strong> MACD</a></li><li class="chapter-item expanded "><a href="../股票/RPS.html"><strong aria-hidden="true">4.7.</strong> RPS</a></li><li class="chapter-item expanded "><a href="../股票/基金.html" class="active"><strong aria-hidden="true">4.8.</strong> 基金</a></li></ol></li><li class="chapter-item expanded "><a href="../外汇/index.html"><strong aria-hidden="true">5.</strong> 外汇</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../外汇/index.html"><strong aria-hidden="true">5.1.</strong> TBC</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Finance Introduction</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="基金"><a class="header" href="#基金">基金</a></h1>
+<ul>
+<li>指数型基金</li>
+<li>股票型基金</li>
+<li>混合型基金</li>
+</ul>
+<h2 id="指数基金"><a class="header" href="#指数基金">指数基金</a></h2>
+<p>指数基金就是以特定标的指数（如沪深300指数、标普500指数等）的成份股为投资对象，通过购买该指数的全部或部分成份股构建投资组合，追踪该指数表现的基金。</p>
+<p>指数基金属于被动投资基金，即指数基金不主动寻求超越市场的表现，而是以复制指数的收益为投资目标。</p>
+<h2 id="lof-基金"><a class="header" href="#lof-基金">LOF 基金</a></h2>
+<h2 id="etf-基金"><a class="header" href="#etf-基金">ETF 基金</a></h2>
+<p>ETF基金，即交易所交易基金（Exchange Traded Funds，简称“ETF”），是一种在交易所上市交易的、基金份额可变的一种开放式基金。它和LOF（上市型开放式基金）构成了场内交易基金的主要品种。</p>
+<p>我国的ETF基金可以划分为四类：股票型、债券型、商品型和货币型。其中，股票型、债券型和商品型ETF均以被动指数投资为主，货币型ETF则是一种特殊的场内货币基金。其中商品型ETF跟踪的均为国内黄金现货</p>
+<p>ETF跟踪的是某一指数，也就是一揽子股票，所以单个股票的波动不会对ETF的整体表现造成太大影响，从而分散了系统性风险。</p>
+<p>另一方面，ETF的标的指数一般都有较为久远的历史数据可以追踪，可以通标的指数以往的波动率来预测特定ETF基金的风险。</p>
+<p>数据显示ETF基金的波动率比主动股票型基金和增强型指数基金小；而增强型指数基金因为加入了增强型的积极手段，波动率比被动指数基金要高，当然收益率也高于主动股票型基金和被动指数基金。这也符合风险和收益匹配的基本规律。</p>
+<p>与场外的开放式基金和LOF基金相比，ETF基金在交易方式具有两个独特之处：</p>
+<p>❶ ETF基金采用实物申赎，而非现金申赎：</p>
+<p>申购时需要按照ETF基金的要求购买一揽子产品清单上的股票，然后使用股票来交换ETF份额。</p>
+<p>同样的，赎回时得到的也不是现金，而是与当时ETF基金成分对应的一揽子股票，得到股票后可自行卖掉。</p>
+<p>一般来说，实物申赎可以避免基金在赎回时为了获取现金而卖出股票造成的净值波动，有利于保护其他投资者的利益，但是这种申赎方式也决定了申赎的门槛很高，一般需要100万以上的资金才可以操作。</p>
+<p>不过同时ETF份额也可以像股票一样挂牌交易，且免印花税，交易以一手（100份）为起点，资金量较小的投资者也完全有能力参与。</p>
+<p>❷ ETF的净值估计频率更高效。</p>
+<p>在二级市场交易ETF份额时，投资者可以参考IOPV值对ETF的实时净值进行估计。</p>
+<p>IOPV(Indicative Optimized Portfolio Value)是ETF的基金份额参考净值，由证券交易所根据基金管理人提供的计算方法及每日提供的申购、赎回清单，按照清单内组合证券的最新成交价格计算。IOPV值每15秒更新一次。</p>
+<p>投资者可以参考IOPV值来判断当前ETF的报价是否合理，从而决定是否进行交易。</p>
+<p>相比之下，场外基金的净值每日更新，LOF基金的净值则是一天更新一次或几次，因此投资者无法准确的判断购买或者申购基金的价格与当前基金净值的偏离情况，从而造成“买贵了”的情况出现。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../股票/RPS.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../外汇/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../股票/RPS.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../外汇/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

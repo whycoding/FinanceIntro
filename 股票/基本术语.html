@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html lang="zh-hans" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>基本术语 - Finance Introduction</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">前言</a></li><li class="chapter-item expanded "><a href="../金融/index.html"><strong aria-hidden="true">1.</strong> 金融简介</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../金融/金融学.html"><strong aria-hidden="true">1.1.</strong> 金融学</a></li><li class="chapter-item expanded "><a href="../金融/货币.html"><strong aria-hidden="true">1.2.</strong> 货币</a></li><li class="chapter-item expanded "><a href="../金融/利率.html"><strong aria-hidden="true">1.3.</strong> 利率</a></li><li class="chapter-item expanded "><a href="../金融/财富管理.html"><strong aria-hidden="true">1.4.</strong> 财富管理</a></li><li class="chapter-item expanded "><a href="../金融/Others.html"><strong aria-hidden="true">1.5.</strong> Others</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> 利率</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../利率/利率行为1.html"><strong aria-hidden="true">2.1.</strong> 供需曲线</a></li></ol></li><li class="chapter-item expanded "><a href="../货币/index.html"><strong aria-hidden="true">3.</strong> 货币</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../货币/index.html"><strong aria-hidden="true">3.1.</strong> 通货膨胀</a></li><li class="chapter-item expanded "><a href="../货币/index.html"><strong aria-hidden="true">3.2.</strong> 金本位</a></li><li class="chapter-item expanded "><a href="../货币/index.html"><strong aria-hidden="true">3.3.</strong> 石油货币</a></li></ol></li><li class="chapter-item expanded "><a href="../股票/index.html"><strong aria-hidden="true">4.</strong> 股票</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../股票/股价变化.html"><strong aria-hidden="true">4.1.</strong> 股价变化</a></li><li class="chapter-item expanded "><a href="../股票/基本术语.html" class="active"><strong aria-hidden="true">4.2.</strong> 基本术语</a></li><li class="chapter-item expanded "><a href="../股票/基本技术指标.html"><strong aria-hidden="true">4.3.</strong> 基本技术指标</a></li><li class="chapter-item expanded "><a href="../股票/交易量.html"><strong aria-hidden="true">4.4.</strong> 交易量</a></li><li class="chapter-item expanded "><a href="../股票/筹码分布.html"><strong aria-hidden="true">4.5.</strong> 筹码分布</a></li><li class="chapter-item expanded "><a href="../股票/MACD.html"><strong aria-hidden="true">4.6.</strong> MACD</a></li><li class="chapter-item expanded "><a href="../股票/RPS.html"><strong aria-hidden="true">4.7.</strong> RPS</a></li><li class="chapter-item expanded "><a href="../股票/基金.html"><strong aria-hidden="true">4.8.</strong> 基金</a></li></ol></li><li class="chapter-item expanded "><a href="../外汇/index.html"><strong aria-hidden="true">5.</strong> 外汇</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../外汇/index.html"><strong aria-hidden="true">5.1.</strong> TBC</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Finance Introduction</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="基本术语"><a class="header" href="#基本术语">基本术语</a></h1>
+<p>链接：https://www.zhihu.com/question/37054230/answer/373072518</p>
+<p>1、内外盘内盘：以买入价成交的交易，成交数量统计加入内盘。外盘：以卖出价成交的交易。成交的数量量统计加入外盘。内盘，外盘这两个数据大体可以用来判断买卖力量的强弱。若外盘数量大于内盘，则表现买方力量较强，若内盘数量大于外盘则说明卖方力量较强。</p>
+<p>2、多头空头多头：指投资者对股市看好，预计股价将会看涨，于是趁低价时买进股票，待股票上涨至某一价位时再卖出，以获取差额收益。空头：空头是投资者和股票商认为现时股价虽然较高，但对股市前景看坏，预计股价将会下跌，于是把借来的股票或者是原有持仓及时卖出，待股价跌至某一价位时再买进，以获取差额收益。</p>
+<p>3、涨停跌停涨跌停板是证券管理部门为了防止过度的投机而采取的一种措施，是指一只个股每天的最大涨跌幅度不能超过前一交易日的百分比。普通的股票最大涨跌幅为前一交易日的10%。新股上市首日不设涨跌幅限制。</p>
+<p>4、洗盘：投机者先把股价大幅度杀低，使大批小额股票投资者(散户)产生恐慌而抛售股票，然后再把股价抬高，以便乘机渔利。</p>
+<p>5、回档：在股市上，股价呈不断上涨趋势，终因股价上涨速度过快而反转回跌到某一价位，这一调整现象称为回档。一般来说，股票的回档幅度要比上涨幅度小，通常是反转回跌到前一次上涨幅度的三分之一左右时又恢复原来上涨趋势。</p>
+<p>6、反弹：在股市上，股价呈不断下跌趋势，终因股价下跌速度过快而反转回升到某一价位的调整现象称为反弹。一般来说，股票的反弹幅度要比下跌幅度小，通常是反弹到前一次下跌幅度的三分之一左右时，又恢复原来的下跌趋势。</p>
+<p>7、跳空：指受强烈利多或利空消息刺激，股价开始大幅度跳动。跳空通常在股价大变动的开始或结束前出现。</p>
+<p>8、补空：是空头买回以前卖出的股票的行为。</p>
+<p>9、阻力线与支撑线阻力线：股市受利多信息的影响，股价上涨至某一价格时，做多头的认为有利可图，但实际却有大量卖出，使股价至此停止上升，甚至出现回跌。股市上一般将这种遇到阻力时的价位称为关卡，股价上升时的关卡称为阻力线。支撑线：股市受利空信息的影响，股价跌至某一价位时，做空头的认为有利可图，大量买进股票，使股价不再下跌，甚至出现回升趋势。股价下跌时的关卡称为支撑线。</p>
+<p>10、在股票名称前冠以“ST”的股票表示该上市公司最近两年连续亏损，或亏损一年，但净资产跌破面值、公司经营过程中出现重大违法行为等情况之一，交易所对该公司股票交易进行特别处理。股票交易日涨跌幅限制5%。</p>
+<p>11、金叉死叉黄金交叉(金叉)：指短期移动平均线向上穿过中期移动平均线或短期、中期移动平均线同时向上穿过长期移动平均线的走势图形，表示股价将继续上升。死亡交叉(死叉)：指下降中的短期移动平均线由上而下穿过下降的长期移动平均线，这个时候支撑线被向下跌破，表示股价将继续下落。</p>
+<p>一手就是100股。股票买卖原则上应以一手为整数倍进行。如买100股,5200股等。不能填买入150股,3120股。但由于配股中会发生不足“一手”的情况,如10送3股,您有100股,变为130股,这时可以卖出130股。也就是说,零股不足“一手”可卖出。</p>
+<p>T+1T是英文Trade(交易的意思)的第一个字母。目前沪深两所规定,当天买进的股票只能在第二天卖出,而当天卖出的股票确认成交后,返回的资金当天就可以买进股票。此交易规则简称为T+1。如您今天买进深发展100股,只能明天卖出。如果您明天卖出深发展100股并卖出的股票确认成交后,返回的资金您当天马上又可以买进该股或其他股票。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../股票/股价变化.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../股票/基本技术指标.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../股票/股价变化.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../股票/基本技术指标.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

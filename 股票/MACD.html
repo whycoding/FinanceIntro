@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html lang="zh-hans" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>MACD - Finance Introduction</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">前言</a></li><li class="chapter-item expanded "><a href="../金融/index.html"><strong aria-hidden="true">1.</strong> 金融简介</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../金融/金融学.html"><strong aria-hidden="true">1.1.</strong> 金融学</a></li><li class="chapter-item expanded "><a href="../金融/货币.html"><strong aria-hidden="true">1.2.</strong> 货币</a></li><li class="chapter-item expanded "><a href="../金融/利率.html"><strong aria-hidden="true">1.3.</strong> 利率</a></li><li class="chapter-item expanded "><a href="../金融/财富管理.html"><strong aria-hidden="true">1.4.</strong> 财富管理</a></li><li class="chapter-item expanded "><a href="../金融/Others.html"><strong aria-hidden="true">1.5.</strong> Others</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> 利率</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../利率/利率行为1.html"><strong aria-hidden="true">2.1.</strong> 供需曲线</a></li></ol></li><li class="chapter-item expanded "><a href="../货币/index.html"><strong aria-hidden="true">3.</strong> 货币</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../货币/index.html"><strong aria-hidden="true">3.1.</strong> 通货膨胀</a></li><li class="chapter-item expanded "><a href="../货币/index.html"><strong aria-hidden="true">3.2.</strong> 金本位</a></li><li class="chapter-item expanded "><a href="../货币/index.html"><strong aria-hidden="true">3.3.</strong> 石油货币</a></li></ol></li><li class="chapter-item expanded "><a href="../股票/index.html"><strong aria-hidden="true">4.</strong> 股票</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../股票/股价变化.html"><strong aria-hidden="true">4.1.</strong> 股价变化</a></li><li class="chapter-item expanded "><a href="../股票/基本术语.html"><strong aria-hidden="true">4.2.</strong> 基本术语</a></li><li class="chapter-item expanded "><a href="../股票/基本技术指标.html"><strong aria-hidden="true">4.3.</strong> 基本技术指标</a></li><li class="chapter-item expanded "><a href="../股票/交易量.html"><strong aria-hidden="true">4.4.</strong> 交易量</a></li><li class="chapter-item expanded "><a href="../股票/筹码分布.html"><strong aria-hidden="true">4.5.</strong> 筹码分布</a></li><li class="chapter-item expanded "><a href="../股票/MACD.html" class="active"><strong aria-hidden="true">4.6.</strong> MACD</a></li><li class="chapter-item expanded "><a href="../股票/RPS.html"><strong aria-hidden="true">4.7.</strong> RPS</a></li><li class="chapter-item expanded "><a href="../股票/基金.html"><strong aria-hidden="true">4.8.</strong> 基金</a></li></ol></li><li class="chapter-item expanded "><a href="../外汇/index.html"><strong aria-hidden="true">5.</strong> 外汇</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../外汇/index.html"><strong aria-hidden="true">5.1.</strong> TBC</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Finance Introduction</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="macd-指标"><a class="header" href="#macd-指标">MACD 指标</a></h1>
+<h2 id="macd-计算"><a class="header" href="#macd-计算">MACD 计算</a></h2>
+<h2 id="macd-背驰"><a class="header" href="#macd-背驰">MACD 背驰</a></h2>
+<p>作者：雨中情
+链接：https://www.zhihu.com/question/22345274/answer/603266522
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<p>第一层：对于MACD背驰的基本认识MACD的用法很多，但是都有一个通病，这也是大部分指标的通病，就是滞后性的问题。行情已经走出来了，指标信号才出来，这时再进场已经晚了。但是！MACD的背驰是没有滞后性的，这在指标用法里面是少有的，因此MACD这个用法绝对是非常有价值的。第二层：什么是MACD的背驰<img src="https://pic2.zhimg.com/50/v2-e4acd764d37e937830063d30c84e4e0f_b.jpg" data-caption="" data-size="normal" data-rawwidth="575" data-rawheight="279" data-default-watermark-src="https://pic1.zhimg.com/50/v2-773582813665aa965ae34d30e947205d_b.jpg" class="origin_image zh-lightbox-thumb" width="575" data-original="https://pic2.zhimg.com/50/v2-e4acd764d37e937830063d30c84e4e0f_r.jpg"></p>
+<p>如上图：a. 顶背驰情况下，价格的高点比前一次高点更高，MACD指标中差离值（DIF）的高点比前一次高点更低；b. 底背驰情况下，价格的低点比前一次低点更低，MACD指标中差离值（DIF）的低点比前一次地点更高。MACD的差离值反映的是价格上涨或下跌的动能，当MACD出现顶背驰，说明虽然价格继续上涨，但是上涨动能已经衰竭。因此，出现MACD顶背驰，后市趋势反转下跌是大概率事件。同样，当出现MACD底背驰，说明下跌动能已经衰竭，后市趋势反转向上是大概率事件。这是我们对背驰最基本的认识，当然，你应该不会认为知道这个就可以去做交易了吧？第三层：MACD背驰的基本使用条件a. 顶背驰背驰有效的前提是，价格必须正运行在上涨趋势中b. 底背驰有效的前提是，价格必须正运行在下跌趋势中这一层很好理解，MACD出现顶背驰说明上涨动能衰竭，那顶背驰的基本使用条件是什么？当然是价格正处在上涨趋势，没有上涨趋势，何谈上涨动能衰竭？底背驰也是同理。有部分交易者不太注意甚至不知道这个基本使用条件，但是这个真的很基本。第四层：MACD背驰的进阶使用条件（重点）a. 组成背驰形态的所有差离值，不得穿越零轴。穿越零轴代表趋势发生变化，前面也说了，顶背驰必须运行在上涨趋势中，底背驰必须运行在下跌趋势中，中途趋势不能发生变化，如果中途趋势发生变化，那么我们不能把这个形态理解为上涨或下跌动能衰竭，因为连趋势都已经发生变化了。b. 价格与DIF的两个顶/底之间距离不能太近，也不能太远。距离太近的两个波峰或波谷，技术分析上一般解读为这是市场的一个短期波动，所以将其视为一个波峰或波谷，而不是两个。距离太远的两个波峰或波谷，中间经历了非常长的时间，很可能市场环境、多空力量对比已经发生了明显变化，因此这个两个波峰或波谷应该被视为两个没有关联的完全独立的波峰或波谷，那么自然不存在“背驰”的概念。c. 背驰形成之后，MACD中的差离值（DIF）必须迅速突破零轴，完成趋势反转。如果间隔太久，很可能市场环境、多空力量对比已经发生了明显变化，那么这个形态的有效性已经大打折扣了。第五层：与K线分析结合，让正确率更上一层楼因为MACD没有滞后性，所以它的最佳搭档是同样没有滞后性的K线分析。因此，如果顶背驰形态形成伴随着K线下破上行趋势线，或底背驰形态形成伴随着K线上破下降趋势线，形态有效的概率更大。当然，不是每次背驰都能在K线图上画出趋势线的，其它的判断趋势反转的方法，比如K线突破长期均线等等，也都可以与MACD结合，但K线分析是最佳的。</p>
+<img src="https://pic3.zhimg.com/50/v2-d08acfe0ee0eadb3bbafac73bec15b45_b.jpg" data-caption="" data-size="normal" data-rawwidth="559" data-rawheight="273" data-default-watermark-src="https://pic4.zhimg.com/50/v2-9f8bd5c004b3bf15987427b9862c8a12_b.jpg" class="origin_image zh-lightbox-thumb" width="559" data-original="https://pic3.zhimg.com/50/v2-d08acfe0ee0eadb3bbafac73bec15b45_r.jpg">
+<p>如上图，MACD底背驰形成后，差离值（DIF）迅速上破零轴，同时伴随K线上破下降趋势线，后市价格如预期转为上涨。第六层：MACD背驰的交易方法当MACD顶背驰形成，并且确认它符合前五层描述的全部条件后，在差离值（DIF）下破零轴并且最近一根K线的收盘价下破上涨趋势线时，进场做空。当MACD底背驰形成，并且确认它符合前五层描述的全部条件后，在差离值（DIF）上破零轴并且最近一根K线的收盘价上破下跌趋势线时，进场做多。理解了前面的内容，这一层就是实操环节，相当简单。根据上面的描述，结合第五层的图例，应该就清楚了。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../股票/筹码分布.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../股票/RPS.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../股票/筹码分布.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../股票/RPS.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
